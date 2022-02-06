@@ -52,9 +52,12 @@ public class BookService {
    }
    
    public void delete(int id){
+      Book target=null;
       for (Book i: books){
          if (i.getId()==id)
-             books.remove(i);
+            target = i;
       }
+      if (target!=null)
+         books.remove(target);
    }
 }
