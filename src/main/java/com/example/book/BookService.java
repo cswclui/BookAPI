@@ -9,14 +9,15 @@ public class BookService {
    @Autowired
    private BookRepository repo;
 
-   public BookService() {
+   public BookService(BookRepository repo) {
       System.out.println("BookService() is called...");
+      this.repo = repo;
    }
 
    // Fetch all books
    public List<Book> list() {
      List<Book> books = repo.findAll();
-   return books;
+      return books;
    }
 
    // Get book by ID

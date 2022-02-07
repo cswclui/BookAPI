@@ -38,6 +38,14 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>		
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.9.5</version>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -45,6 +53,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				<configuration>
+					<reportFormat>plain</reportFormat>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
