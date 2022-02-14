@@ -11,6 +11,14 @@ public class Book {
     private String title;
     private String author;
     
+    public int getBookid() {
+        return bookid;
+    }
+
+    public void setBookid(int bookid) {
+        this.bookid = bookid;
+    }
+
     //Added default constructor
     public Book(){ 
     }
@@ -27,13 +35,6 @@ public class Book {
         this.author = author;
     }
 
-    public int getId() {
-        return bookid;
-    }
-
-    public void setId(int bookid) {
-        this.bookid = bookid;
-    }
 
     public String getTitle() {
         return title;
