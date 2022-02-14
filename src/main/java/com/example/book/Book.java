@@ -15,6 +15,14 @@ public class Book {
         return bookid;
     }
 
+    public int getBookid() {
+        return bookid;
+    }
+
+    public void setBookid(int bookid) {
+        this.bookid = bookid;
+    }
+
     public void setId(int bookid) {
         this.bookid = bookid;
     }
