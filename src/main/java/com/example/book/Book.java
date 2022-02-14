@@ -11,11 +11,13 @@ public class Book {
         this.author = author;
     }
 
-    public int getId() {
+
+    public int getBookid() {
         return bookid;
     }
 
-    public void setId(int bookid) {
+
+    public void setBookid(int bookid) {
         this.bookid = bookid;
     }
 
