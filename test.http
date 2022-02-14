@@ -1,0 +1,7 @@
+GET http://localhost:8080/books/1
+
+HTTP/1.1 200  - OK
+content-type: application/json
+transfer-encoding: chunked
+date: Mon, 14 Feb 2022 10:06:40 GMT
+connection: close
