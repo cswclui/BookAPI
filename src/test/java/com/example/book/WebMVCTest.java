@@ -5,7 +5,6 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import java.util.List;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.*;
@@ -29,7 +28,7 @@ public class WebMVCTest{
       when(mockBookService.list())
       .thenReturn(List.of(
          new Book(1,"Book1","Author1"),
-         new Book(1,"Book2","Author2")
+         new Book(2,"Book2","Author2")
          ));
 
       mockMvc.perform(get("/books"))

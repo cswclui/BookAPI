@@ -25,8 +25,9 @@ public class BookRepositoryTest {
 
     @Test
     void shouldSaveNewBooks() {
-        repo.save(new Book(6, "Book3","Author3"));
-        Book b = repo.findById(6).orElse(null);
+        repo.save(new Book("Book3","Author3"));
+        System.out.println("--->All books:"+repo.findAll());
+        Book b = repo.findById(3).orElse(null);
         assertEquals("Author3",b.getAuthor());
     }
 }

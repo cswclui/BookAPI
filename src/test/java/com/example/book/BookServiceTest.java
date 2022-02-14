@@ -25,7 +25,7 @@ public class BookServiceTest {
       when(mockRepo.findAll())
       .thenReturn(List.of(
          new Book(1,"Book1","Author1"),
-         new Book(1,"Book2","Author2")
+         new Book(2,"Book2","Author2")
          ));
 
       int book_count = bookservice.list().size();
@@ -37,3 +37,5 @@ public class BookServiceTest {
       assertEquals(2, book_count);
    }
 }
+
+// mvn test -Dtest=com.example.book.BookServiceTest
