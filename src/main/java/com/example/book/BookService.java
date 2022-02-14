@@ -23,7 +23,7 @@ public class BookService {
 
    public Book get(int id) {
         for (Book i: books){
-            if (i.getId()==id)
+            if (i.getBookid()==id)
                 return i;
         }
         return null; //book not found
@@ -33,7 +33,7 @@ public class BookService {
 
    public void create(Book book) {
       if( book != null) {
-         book.setId(books.size()+1);
+         book.setBookid(books.size()+1);
          books.add(book);
       }
    }
@@ -41,7 +41,7 @@ public class BookService {
    public void update(Book book) {
       Book currentBook = null;
       for (Book i: books){
-         if (i.getId()==book.getId())
+         if (i.getBookid()==book.getBookid())
              currentBook = i;
       }
    
@@ -53,7 +53,7 @@ public class BookService {
    public void delete(int id){
       Book target=null;
       for (Book i: books){
-         if (i.getId()==id)
+         if (i.getBookid()==id)
             target = i;
       }
       if (target!=null)

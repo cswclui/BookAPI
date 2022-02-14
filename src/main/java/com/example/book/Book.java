@@ -11,10 +11,6 @@ public class Book {
         this.author = author;
     }
 
-    public int getId() {
-        return bookid;
-    }
-
     public int getBookid() {
         return bookid;
     }
@@ -23,10 +19,7 @@ public class Book {
         this.bookid = bookid;
     }
 
-    public void setId(int bookid) {
-        this.bookid = bookid;
-    }
-
+  
     public String getTitle() {
         return title;
     }
