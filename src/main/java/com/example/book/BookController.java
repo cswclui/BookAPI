@@ -24,7 +24,7 @@ public class BookController {
     @GetMapping("/{id}")
     public Book get(@PathVariable int id) {
         for (Book i: books){
-            if (i.getId()==id)
+            if (i.getBookid()==id)
                 return i;
         }
         return null; //book not found
